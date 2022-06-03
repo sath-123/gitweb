@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        var i=1;
+        function changecolor()
+        {
+            document.getElementById("ppp").style.color="white";
+        }
+        var image_tracer="f";
+        function fn1()
+        {
+          var image=document.getElementById("img1");
+          if(image_tracer=="f")
+          {
+              image.src="sath3.jpg";
+              image_tracer="s";
+          }
+          else if(image_tracer=="s")
+          {
+              image.src="sath1.jpg";
+              image_tracer="t";
+          }
+          else if(image_tracer=="t")
+          {
+              image.src="pic2.jpg";
+              image_tracer="e";
+          }
+          else if(image_tracer=="e")
+          {
+              image.src="pic3.jpg";
+              image_tracer="fi";
+          }
+          else if(image_tracer=="fi")
+          {
+              image.src="sath2.jpg";
+              image_tracer="f";
+
+          }
+
+           
+        }
+    </script>
+    <style>
+        #tab{
+            margin-top: 60px;
+            
+        }
+    </style>
+</head>
+<body id="body3">
+    <nav id="navbar">
+        <label id="info"> personal info</label>
+        <span>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="skills.html">skills</a></li> 
+            <li><a href="habits.html">habits</a></li>
+            <li><a id="ppp"href="assignment.html" onmouseover="changecolor()">assignment</a></li>
+        </span>
+    </nav>
+    <h2 style="margin-left:40%; margin-bottom:4%;" >Assignment problems</h2>
+    <table  margin-bottom = "3%" margin-top="10%" align="center" border="2" height="20%" width="25%">
+        <tr>
+            <th>name</th>
+            <th>names</th>
+            <th>nam</th>
+        </tr>
+        <tr>
+            <td rowspan="2"> merged row cells</td>
+            <td colspan="2">merged co cells example</td>
+        </tr>
+        <tr>
+            <td>chikky</td>
+            <td>sath</td>
+            
+        </tr>
+        <tr>
+            <td>math</td>
+            <td>physics</td>
+            <td>chemistry</td>
+        </tr>
+
+    </table>
+    <h2 style=" margin-top:3.5%;margin-left: 40%;">Image sliding</h2>
+    <img id="img1"onclick="fn1()"class="spr" src="sath2.jpg" align="left">
+    
+    
+
+    <script>
+        var navbar=document.getElementById("navbar");
+        var sticky=navbar.offsettop;
+        window.onscroll=function(){
+            if(window.scrolly > sticky){
+                navbar.classList.add("sticky");
+            }
+            else{
+                navbar.classList.add("sticky");
+            }
+
+        };
+    </script>
+
+</body>
+</html>

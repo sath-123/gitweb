@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index.html</title>
+    <link type="text/css"  rel="stylesheet" href="styles.css">
+    <script
+        src="https://ajax.googleapis.com/ajax/li/bs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        function changecolor()
+        {
+            document.getElementById("ss").style.color="white";
+        }
+    </script>
+    
+</head>
+<body id="body1">
+    <nav id="navbar">
+        <label id="info"> personal info</label>
+        <span>
+            <li><a id="ss" href="index.html" onmouseover="changecolor()" >HOME</a></button></li>
+            <li><a id="sath"class="page1" href="about.html">ABOUT</a></li>
+            <li><a class="page1" href="skills.html">skills</a></li> 
+            <li><a class="page1" href="habits.html">habits</a></li>
+            <li><a class="page1" href="assignment.html">assignment</a></li>
+        </span>
+    </nav id="para">
+    <div >
+        <img id="some"src="pics.jpg" align="left">
+        <p>Hey  what's up guys.my name is MAHESH SATHVIKA,Mahesh is my surname.</P>
+    </div>
+    <script>
+        var navbar=document.getElementById("navbar");
+        var sticky=navbar.offsettop;
+        window.onscroll=function(){
+            if(window.scrolly > sticky){
+                navbar.classList.add("sticky");
+            }
+            else{
+                navbar.classList.add("sticky");
+            }
+
+        };
+    </script>
+</body>
+</html>

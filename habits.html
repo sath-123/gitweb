@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HABITS</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function changecolor()
+        {
+            document.getElementById("pp").style.color="white";
+        }
+    </script>
+</head>
+<body id="body2">
+    <nav id="navbar">
+        <label id="info"> personal info</label>
+        <span>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">skills</a></li> 
+            <li><a id="pp" href="habits.html" onmouseover="changecolor()">habits</a></li>
+            <li><a href="assignment.html">assingment</a></li>
+        </span>
+    </nav>
+    
+    <img class="pru" src="https://images.hindustantimes.com/rf/image_size_630x354/HT/p2/2018/08/29/Pictures/sundar-pichai_3a08a376-ab5e-11e8-82d1-388e3d6e11aa.jpg">
+    
+    <img class="pru" src="https://img-cdn.inc.com/image/upload/w_1920,h_1080,c_fill/images/panoramic/getty_956078988_200013352000928056_bcjpjb.jpg">
+ 
+    <script>
+        var navbar=document.getElementById("navbar");
+        var sticky=navbar.offsettop;
+        window.onscroll=function(){
+            if(window.scrolly > sticky){
+                navbar.classList.add("sticky");
+            }
+            else{
+                navbar.classList.add("sticky");
+            }
+
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <script>
+        function changecolor()
+        {
+            document.getElementById("ssss").style.color="white";
+        }
+    </script>
+    
+    <style>
+        #table th,#table td{
+          padding:13px;
+        }
+    </style>
+</head>
+<body id="body4">
+    
+    <nav id="navbar">
+        <label id="info"> personal info</label>
+        <span>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a id ="ssss"href="skills.html" onmouseover="changecolor()">skills</a></li> 
+            <li><a href="habits.html">habits</a></li>
+            <li><a href="assignment.html">assignment</a></li>
+        </span>
+    </nav>
+     <h2 style="color:white;margin-left:40%">skill form</h2>
+     <form>
+         <input id="name"style="margin-left:34%; width:30%; font-weight: bolder;margin-bottom: 0.5%;" type="text" placeholder="NAME">
+         <br>
+         <input id="skill" style="margin-left:34%; width:30%; font-weight: bolder; margin-bottom: 0.5%;" type="text" placeholder="SKILLS">
+         <br>
+         <select id="level" style="margin-left: 34%; margin-bottom: 0.5%; width:30%; font-weight:bold;">
+             <option value="choose any one">choose any one</option>
+             <option value="Beginner">Beginner</option>
+             <option value="intermidate">intermediate</option>
+             <option value="proficient">proficient</option>
+         </select>
+         <br>
+         
+         <button id="button"style="margin-left: 34%; margin-bottom: 1%;"type="button" onclick="addrow()" >SUBMIT</button>
+
+     </form>
+     <table id="table" border="1" align="center" width=31% height=20% style="background-color: white;">
+        <tr>
+            <th>NAME</th>
+            <th>SKILL</th>
+            <th>LEVEL</th>
+            
+        </tr>
+     </table>
+     
+    <script>
+        var navbar=document.getElementById("navbar");
+        var sticky=navbar.offsettop;
+        window.onscroll=function(){
+            if(window.scrolly > sticky){
+                navbar.classList.add("sticky");
+            }
+            else{
+                navbar.classList.add("sticky");
+            }
+
+        };
+        var n=1;
+        var x=0;
+        var list1 =[];
+        var list2 =[];
+        var list3 =[];
+        function addrow()
+        {
+            var addrown = document.getElementById("table");
+            var newrow = addrown.insertRow(n);
+
+            list1[x] =document.getElementById("name").value;
+            list2[x] = document.getElementById("skill").value;
+            var select=document.getElementById("level");
+            list3[x] = select.options[select.selectedIndex].value;
+
+            var cel1= newrow.insertCell(0);
+            var cel2 =newrow.insertCell(1);
+            var cel3=newrow.insertCell(2);
+            cel1.innerHTML = list1[x];
+            cel2.innerHTML = list2[x];
+            cel3.innerHTML = list3[x];
+            n++;
+            x++;
+
+        }
+    </script>
+</body>
+</html>

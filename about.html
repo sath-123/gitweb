@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="../css/styles.css"> -->
+    <script>
+      function changecolor()
+      {
+        document.getElementById("sss").style.color="white";
+      }
+    </script>
+    <style >
+        a{
+          color:lightsalmon;
+        }
+        p{
+          color:white;
+        }
+    </style>
+</head>
+<body id="body5">
+  <nav id="navbar">
+    <label id="info"> personal info</label>
+    <span>
+        <li><a href="index.html">HOME</a></li>
+        <li><a id ="sss" href="about.html" onmouseover="changecolor()">about</a></li>
+        <li><a href="skills.html">skills</a></li> 
+        <li><a href="habits.html">habits</a></li>
+        <li><a href="assignment.html">assignment</a></li>
+    </span>
+  </nav>
+  <h1 style="margin-left :40%;color:white;">ABOUT ME</h1>
+  <P style="margin-left:28%; font-size:20px;">My self SATHVIKA ,presently staying at TELANGANA.My mom and dad call me CHIKKY.</P>
+  <p style="margin-left:28%;font-size:20px;"> I am studing CSE at <a href="https://courses.iiit.ac.in/"> IIITH</a>.</p>
+  <p  style="margin-left:28% ;font-size:20px;"> I have studied in SPR SCHOOL OF EXCELLENCE from my 8th to 10th standard. My life changed a lot after joining in SPR school.</p>
+  <p  style="margin-left:42% ;font-size:20px;"> My hobbies </p>
+  <ul>
+    <li style="margin-left:42%; font-size:20px;color:white;"> Fighting with my sister</li>
+    <li style="margin-left:42%;font-size:20px;color:white;">watching <a href="https://m.youtube.com/">youtube</a>videos</li>
+    <li style="margin-left:42% ;font-size:20px;color:white;"> I am very inactive in social medias like Facebook,instagram,twitter.</li>
+  </ul>
+  <script>
+    var navbar=document.getElementById("navbar");
+    var sticky=navbar.offsettop;
+    window.onscroll=function(){
+        if(window.scrolly > sticky){
+            navbar.classList.add("sticky");
+        }
+        else{
+            navbar.classList.add("sticky");
+        }
+
+    };
+</script>
+
+</body>
+</html>

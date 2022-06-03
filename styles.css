@@ -1,0 +1,113 @@
+*{
+    text-decoration: none;
+}
+body{
+    margin: 0%;
+}
+nav{
+    background :black;
+    height: 50px;
+    width: 100%;
+    margin: 0% 0% 0% 0%;
+    
+}
+#info{
+    color:white;
+    font-size: 25px;
+    line-height: 50px;
+
+}
+nav span{
+    float: right;
+    margin-right: 30px;
+}
+nav span li{
+    display:inline-block;
+    line-height: 50px;
+    margin: 0 20px;
+}
+nav span li a{
+    color:lightsteelblue;
+    font-size: 17px;
+    text-transform:uppercase;
+}
+.photos{
+    width:200px;
+    height:200px;
+    object-fit: cover;
+    color:orange;
+}
+#body1{
+    background-image:url(pic3.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+#body2{
+    background-color:lightsteelblue;
+}
+#body3{
+    background-color: lightsteelblue;
+}
+#body4{
+    background-image:url(nat.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+#body5{
+    background-image: url(pic2.jpg);
+    background-size: cover;
+}
+#some{
+    width:20%;
+    height:20%;
+    object-fit: cover;
+    border:black 3px solid;
+    margin-right:20px;
+    margin-left:5px;
+    margin-top: 5PX;
+    margin-bottom: 5px;
+
+}
+div{
+    
+    
+    margin:5% 65% 80% 70% ;
+    width:25%;
+    height:50%;
+    border: BLACK 4px solid;
+    
+    
+    
+    
+}
+p{
+    font-size: 20px;
+    font-weight: bold;
+    color:Black;
+
+}
+.photo{
+    width:200px;
+    height:200px;
+    object-fit:cover;
+}
+.sticky{
+    position:fixed;
+    top:0;
+    width:100%;
+}
+
+.pru{
+    width :30%;
+    height:20%;
+    margin-top:2%;
+    margin-left:2%;
+    height: 10%;
+    border:black 2px solid;
+}
+.spr{
+    width:7%;
+    margin-left:40%;
+    display: inline;
+    float:left;
+}
